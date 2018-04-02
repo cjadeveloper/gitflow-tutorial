@@ -1,4 +1,4 @@
-# Git y Git Flow
+# Tutorial y uso de Git y Git Flow
 
 [Git-Flow](http://aprendegit.com/que-es-git-flow/) es un conjunto de extensiones para [Git](https://git-scm.com/) que proveen comandos de alto nivel para operar repositorios basados en el [modelo de ramificaciones de Vincent Driessen](http://nvie.com/posts/a-successful-git-branching-model/).
 
@@ -114,9 +114,9 @@ Esas ramas se utilizan para corregir errores y bugs en el código en producción
 
 Las ramas de realese y hotfix son las únicas permitidas para incorporar cambios (commits) a la rama master. Para decirlo de otro modo: **master solo puede recibir merges de realise y/o hotfix**
 
-Mientras que **las features siempre iran a develop.**
+Mientras que **las features siempre irán a develop.**
 
-## Tools en accion
+## Tools en acción
 
 <https://github.com/nvie/gitflow>
 
