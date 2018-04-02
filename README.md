@@ -63,7 +63,7 @@ El trabajo se organiza en dos ramas principales:
 
 ### Rama Master (master branch)
 
-Cualquier commit que pongamos en esta rama debe estar preparado para subir a producción. Es la rama donde iniciamos nuestro proyecto y desde donde se clonará siempre nuestro proyecto. _**No se hacen commit aquí**_ (salvo raras excepciones de correcciones muuuuuy tontas)
+Cualquier commit que pongamos en esta rama debe estar preparado para subir a producción. Es la rama donde iniciamos nuestro proyecto y desde donde se clonará siempre nuestro proyecto. _**No se hacen commit aquí**_ (salvo raras excepciones de correcciones muy tontas)
 
 ![Rama Master](git-001.png)
 
@@ -91,9 +91,9 @@ Estas ramas se utilizan para desarrollar nuevas características de la aplicaci�
 
 ### Rama de Versión (realese branch)
 
-Estas ramas se utilizan para preparar el siguiente código en producción. En estas ramas se hacen los últimos ajustes y se corrigen los últimos bugs antes de pasar el código a producción incorporándolo a la rama master. Esta rama "congela" la rama develop. Parte de ella, a deferencia de hotfix que, como veremos, parte de master (congela a master como se dice habitualmente)
+Estas ramas se utilizan para preparar el siguiente código en producción. En estas ramas se hacen los últimos ajustes y se corrigen los últimos bugs antes de pasar el código a producción incorporándolo a la rama master. Esta rama "congela" la rama develop. Parte de ella, a diferencia de hotfix que, como veremos, parte de master ("congela" a master como se dice habitualmente)
 
-En la rama de versionado, se pueden hacer cambios menores referentes a configuración de la release como ser: archivos de configuraciones, archivos de librerías de la versión, correcciones muy menores para salir a producción, pero solo eso. No hay desarrollo de características aquí ni correcciones de bugs.
+En la rama de versionado, se pueden hacer cambios menores referentes a configuraciones de la release como ser: archivos de configuraciones, archivos de librerías de la versión, correcciones muy menores para salir a producción, pero solo eso. No hay desarrollo de características aquí ni correcciones de bugs.
 
 * Se originan a partir de la rama develop
 * Se incorporan a master y develop.
