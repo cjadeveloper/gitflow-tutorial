@@ -83,38 +83,38 @@ Rama en la que está el código que conformará la siguiente versión planificad
 
 Estas ramas se utilizan para desarrollar nuevas características de la aplicación que, una vez terminadas, se incorporan a la rama develop. **Es donde trabajaremos en el día a día y donde haremos nuestro commits.**
 
-* Se originan a partir de la rama develop.
-* Se incorporan siempre a la rama develop.
+* Se originan a partir de la rama Develop.
+* Se incorporan siempre a la rama Develop.
 * Nombre: cualquiera que no sea master, develop, hotfix-* o release-*
 
 ![Rama Feature](git-004.png)
 
 ### Rama de Versión (realese branch)
 
-Estas ramas se utilizan para preparar el siguiente código en producción. En estas ramas se hacen los últimos ajustes y se corrigen los últimos bugs antes de pasar el código a producción incorporándolo a la rama master. Esta rama "congela" la rama develop. Parte de ella, a diferencia de hotfix que, como veremos, parte de master ("congela" a master como se dice habitualmente)
+Estas ramas se utilizan para preparar el siguiente código en producción. En estas ramas se hacen los últimos ajustes y se corrigen los últimos bugs antes de pasar el código a producción incorporándolo a la rama Master. Esta rama "congela" la rama Develop. Parte de ella, a diferencia de Hotfix que, como veremos, parte de Master ("congela" a master como se dice habitualmente)
 
 En la rama de versionado, se pueden hacer cambios menores referentes a configuraciones de la release como ser: archivos de configuraciones, archivos de librerías de la versión, correcciones muy menores para salir a producción, pero solo eso. No hay desarrollo de características aquí ni correcciones de bugs.
 
-* Se originan a partir de la rama develop
-* Se incorporan a master y develop.
-* Cuando se incorpora a master se hace un tag con un versionado semántico (tres cifras: mayor-version.menor-version.patch-version)
+* Se originan a partir de la rama Develop
+* Se incorporan a Master y Develop.
+* Cuando se incorpora a Master se hace un tag con un versionado semántico (tres cifras: mayor-version.menor-version.patch-version)
 * Nombre: release-*
 
 ![Rama Release](git-005.png)
 
 ### Rama de Corrección de Errores (hotfix branch)
 
-Esas ramas se utilizan para corregir errores y bugs en el código en producción. Funcionan de forma parecida a las Releases Branches, siendo la principal diferencia que los hotfixes no se planifican. Parten de master. Los cambios que se hagan aquí irán a producción.
+Esas ramas se utilizan para corregir errores y bugs en el código en producción. Funcionan de forma parecida a las Releases Branches, siendo la principal diferencia que los hotfixes no se planifican. Parten de Master. Los cambios que se hagan aquí irán a producción.
 
-* Se origina a partir de la rama master
-* Se incorporan a la master y develop
+* Se origina a partir de la rama Master
+* Se incorporan a la Master y Develop
 * Nombre: hotfix-*
 
 ![Rama Hotfix](git-006.png)
 
-Las ramas de realese y hotfix son las únicas permitidas para incorporar cambios (commits) a la rama master. Para decirlo de otro modo: **master solo puede recibir merges de realise y/o hotfix**
+Las ramas de Realese y Hotfix son las únicas permitidas para incorporar cambios (commits) a la rama master. Para decirlo de otro modo: **Master solo puede recibir merges de Realise y/o Hotfix**
 
-Mientras que **las features siempre irán a develop.**
+Mientras que **las Features siempre irán a Develop.**
 
 ## Tools en acción
 
